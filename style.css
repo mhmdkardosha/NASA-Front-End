@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+.btn{
+      @apply px-4 py-2 rounded-full bg-slate-400 text-white
+}
+.radial-gradient {
+      @media(max-width:787px){
+            background: radial-gradient(black, transparent);
+      }
+    }
+.p-style{
+    @apply  pb-6 md:text-lg  text-zinc-600 font-medium
+}
+.image-layout{
+@apply bg-white p-2 mb-6 overflow-hidden relative before:absolute before:top-2 hover:before:left-2
+before:duration-500  before:ease-outt before:w-[97%] md:before:w-[95%] before:h-[95%] md:before:h-40  before:bg-cyan-200 before:opacity-50 before:left-full
+}
+.p-title{
+@apply relative after:w-1/2 after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:bg-cyan-300 after:h-[2px] after:-translate-y-1/2 after:-translate-x-1/2
+}
+.div-footer{
+      width: calc(100% / 4.5);
+@media(max-width:787px){
+      width:100%;
+}
+
+}
+}
